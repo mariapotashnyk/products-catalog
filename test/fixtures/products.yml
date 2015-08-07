@@ -1,0 +1,401 @@
+---
+product_0:
+  name: Product 0
+  description: Best product 0 for everyone!
+  price: 0.99
+product_1:
+  name: Product 1
+  description: Best product 1 for everyone!
+  price: 1.99
+product_2:
+  name: Product 2
+  description: Best product 2 for everyone!
+  price: 2.99
+product_3:
+  name: Product 3
+  description: Best product 3 for everyone!
+  price: 3.99
+product_4:
+  name: Product 4
+  description: Best product 4 for everyone!
+  price: 4.99
+product_5:
+  name: Product 5
+  description: Best product 5 for everyone!
+  price: 5.99
+product_6:
+  name: Product 6
+  description: Best product 6 for everyone!
+  price: 6.99
+product_7:
+  name: Product 7
+  description: Best product 7 for everyone!
+  price: 7.99
+product_8:
+  name: Product 8
+  description: Best product 8 for everyone!
+  price: 8.99
+product_9:
+  name: Product 9
+  description: Best product 9 for everyone!
+  price: 9.99
+product_10:
+  name: Product 10
+  description: Best product 10 for everyone!
+  price: 10.99
+product_11:
+  name: Product 11
+  description: Best product 11 for everyone!
+  price: 11.99
+product_12:
+  name: Product 12
+  description: Best product 12 for everyone!
+  price: 12.99
+product_13:
+  name: Product 13
+  description: Best product 13 for everyone!
+  price: 13.99
+product_14:
+  name: Product 14
+  description: Best product 14 for everyone!
+  price: 14.99
+product_15:
+  name: Product 15
+  description: Best product 15 for everyone!
+  price: 15.99
+product_16:
+  name: Product 16
+  description: Best product 16 for everyone!
+  price: 16.99
+product_17:
+  name: Product 17
+  description: Best product 17 for everyone!
+  price: 17.99
+product_18:
+  name: Product 18
+  description: Best product 18 for everyone!
+  price: 18.99
+product_19:
+  name: Product 19
+  description: Best product 19 for everyone!
+  price: 19.99
+product_20:
+  name: Product 20
+  description: Best product 20 for everyone!
+  price: 20.99
+product_21:
+  name: Product 21
+  description: Best product 21 for everyone!
+  price: 21.99
+product_22:
+  name: Product 22
+  description: Best product 22 for everyone!
+  price: 22.99
+product_23:
+  name: Product 23
+  description: Best product 23 for everyone!
+  price: 23.99
+product_24:
+  name: Product 24
+  description: Best product 24 for everyone!
+  price: 24.99
+product_25:
+  name: Product 25
+  description: Best product 25 for everyone!
+  price: 25.99
+product_26:
+  name: Product 26
+  description: Best product 26 for everyone!
+  price: 26.99
+product_27:
+  name: Product 27
+  description: Best product 27 for everyone!
+  price: 27.99
+product_28:
+  name: Product 28
+  description: Best product 28 for everyone!
+  price: 28.99
+product_29:
+  name: Product 29
+  description: Best product 29 for everyone!
+  price: 29.99
+product_30:
+  name: Product 30
+  description: Best product 30 for everyone!
+  price: 30.99
+product_31:
+  name: Product 31
+  description: Best product 31 for everyone!
+  price: 31.99
+product_32:
+  name: Product 32
+  description: Best product 32 for everyone!
+  price: 32.99
+product_33:
+  name: Product 33
+  description: Best product 33 for everyone!
+  price: 33.99
+product_34:
+  name: Product 34
+  description: Best product 34 for everyone!
+  price: 34.99
+product_35:
+  name: Product 35
+  description: Best product 35 for everyone!
+  price: 35.99
+product_36:
+  name: Product 36
+  description: Best product 36 for everyone!
+  price: 36.99
+product_37:
+  name: Product 37
+  description: Best product 37 for everyone!
+  price: 37.99
+product_38:
+  name: Product 38
+  description: Best product 38 for everyone!
+  price: 38.99
+product_39:
+  name: Product 39
+  description: Best product 39 for everyone!
+  price: 39.99
+product_40:
+  name: Product 40
+  description: Best product 40 for everyone!
+  price: 40.99
+product_41:
+  name: Product 41
+  description: Best product 41 for everyone!
+  price: 41.99
+product_42:
+  name: Product 42
+  description: Best product 42 for everyone!
+  price: 42.99
+product_43:
+  name: Product 43
+  description: Best product 43 for everyone!
+  price: 43.99
+product_44:
+  name: Product 44
+  description: Best product 44 for everyone!
+  price: 44.99
+product_45:
+  name: Product 45
+  description: Best product 45 for everyone!
+  price: 45.99
+product_46:
+  name: Product 46
+  description: Best product 46 for everyone!
+  price: 46.99
+product_47:
+  name: Product 47
+  description: Best product 47 for everyone!
+  price: 47.99
+product_48:
+  name: Product 48
+  description: Best product 48 for everyone!
+  price: 48.99
+product_49:
+  name: Product 49
+  description: Best product 49 for everyone!
+  price: 49.99
+product_50:
+  name: Product 50
+  description: Best product 50 for everyone!
+  price: 50.99
+product_51:
+  name: Product 51
+  description: Best product 51 for everyone!
+  price: 51.99
+product_52:
+  name: Product 52
+  description: Best product 52 for everyone!
+  price: 52.99
+product_53:
+  name: Product 53
+  description: Best product 53 for everyone!
+  price: 53.99
+product_54:
+  name: Product 54
+  description: Best product 54 for everyone!
+  price: 54.99
+product_55:
+  name: Product 55
+  description: Best product 55 for everyone!
+  price: 55.99
+product_56:
+  name: Product 56
+  description: Best product 56 for everyone!
+  price: 56.99
+product_57:
+  name: Product 57
+  description: Best product 57 for everyone!
+  price: 57.99
+product_58:
+  name: Product 58
+  description: Best product 58 for everyone!
+  price: 58.99
+product_59:
+  name: Product 59
+  description: Best product 59 for everyone!
+  price: 59.99
+product_60:
+  name: Product 60
+  description: Best product 60 for everyone!
+  price: 60.99
+product_61:
+  name: Product 61
+  description: Best product 61 for everyone!
+  price: 61.99
+product_62:
+  name: Product 62
+  description: Best product 62 for everyone!
+  price: 62.99
+product_63:
+  name: Product 63
+  description: Best product 63 for everyone!
+  price: 63.99
+product_64:
+  name: Product 64
+  description: Best product 64 for everyone!
+  price: 64.99
+product_65:
+  name: Product 65
+  description: Best product 65 for everyone!
+  price: 65.99
+product_66:
+  name: Product 66
+  description: Best product 66 for everyone!
+  price: 66.99
+product_67:
+  name: Product 67
+  description: Best product 67 for everyone!
+  price: 67.99
+product_68:
+  name: Product 68
+  description: Best product 68 for everyone!
+  price: 68.99
+product_69:
+  name: Product 69
+  description: Best product 69 for everyone!
+  price: 69.99
+product_70:
+  name: Product 70
+  description: Best product 70 for everyone!
+  price: 70.99
+product_71:
+  name: Product 71
+  description: Best product 71 for everyone!
+  price: 71.99
+product_72:
+  name: Product 72
+  description: Best product 72 for everyone!
+  price: 72.99
+product_73:
+  name: Product 73
+  description: Best product 73 for everyone!
+  price: 73.99
+product_74:
+  name: Product 74
+  description: Best product 74 for everyone!
+  price: 74.99
+product_75:
+  name: Product 75
+  description: Best product 75 for everyone!
+  price: 75.99
+product_76:
+  name: Product 76
+  description: Best product 76 for everyone!
+  price: 76.99
+product_77:
+  name: Product 77
+  description: Best product 77 for everyone!
+  price: 77.99
+product_78:
+  name: Product 78
+  description: Best product 78 for everyone!
+  price: 78.99
+product_79:
+  name: Product 79
+  description: Best product 79 for everyone!
+  price: 79.99
+product_80:
+  name: Product 80
+  description: Best product 80 for everyone!
+  price: 80.99
+product_81:
+  name: Product 81
+  description: Best product 81 for everyone!
+  price: 81.99
+product_82:
+  name: Product 82
+  description: Best product 82 for everyone!
+  price: 82.99
+product_83:
+  name: Product 83
+  description: Best product 83 for everyone!
+  price: 83.99
+product_84:
+  name: Product 84
+  description: Best product 84 for everyone!
+  price: 84.99
+product_85:
+  name: Product 85
+  description: Best product 85 for everyone!
+  price: 85.99
+product_86:
+  name: Product 86
+  description: Best product 86 for everyone!
+  price: 86.99
+product_87:
+  name: Product 87
+  description: Best product 87 for everyone!
+  price: 87.99
+product_88:
+  name: Product 88
+  description: Best product 88 for everyone!
+  price: 88.99
+product_89:
+  name: Product 89
+  description: Best product 89 for everyone!
+  price: 89.99
+product_90:
+  name: Product 90
+  description: Best product 90 for everyone!
+  price: 90.99
+product_91:
+  name: Product 91
+  description: Best product 91 for everyone!
+  price: 91.99
+product_92:
+  name: Product 92
+  description: Best product 92 for everyone!
+  price: 92.99
+product_93:
+  name: Product 93
+  description: Best product 93 for everyone!
+  price: 93.99
+product_94:
+  name: Product 94
+  description: Best product 94 for everyone!
+  price: 94.99
+product_95:
+  name: Product 95
+  description: Best product 95 for everyone!
+  price: 95.99
+product_96:
+  name: Product 96
+  description: Best product 96 for everyone!
+  price: 96.99
+product_97:
+  name: Product 97
+  description: Best product 97 for everyone!
+  price: 97.99
+product_98:
+  name: Product 98
+  description: Best product 98 for everyone!
+  price: 98.99
+product_99:
+  name: Product 99
+  description: Best product 99 for everyone!
+  price: 99.99

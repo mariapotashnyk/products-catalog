@@ -1,0 +1,7 @@
+div.well
+  div data-ng-hide="errorText"
+    h2 {{::name}}
+    h3 {{::description}}
+    p {{::price}} USD
+
+  h2 data-ng-show="errorText" {{::errorText}}

@@ -1,0 +1,23 @@
+table.table data-ng-show="products.length > 0"
+  tr
+    th
+      a href="" data-ng-click="sort('name', direction)" Name
+    th Description
+    th
+      a href="" data-ng-click="sort('price', direction)" Price
+  tr data-ng-repeat="product in products"
+    td
+      a data-ui-sref="public.product({ productId: slugify(product.id, product.name) })" {{::product.name}}
+    td {{::product.description}}
+    td {{::product.price}} USD
+
+p data-ng-hide="products.length > 0 || errorText"
+  |Catalog is empty at the moment :(
+
+pagination.pagination-sm[data-boundary-links="true" data-total-items="totalItems"
+  data-items-per-page="itemsPerPage" data-ng-model="currentPage" data-previous-text="prev"
+  data-next-text="next" data-first-text="first" data-last-text="last" data-ng-change="pageChanged()"
+  data-ng-show="products.length > 0"]
+
+div.well data-ng-show="errorText"
+  h2 {{::errorText}}

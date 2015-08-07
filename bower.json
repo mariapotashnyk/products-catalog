@@ -1,0 +1,12 @@
+{
+  "name": "App",
+  "dependencies": {
+    "lodash": "latest",
+    "angular": "latest",
+    "angular-ui-router": "latest",
+    "ui-router-extras": "latest",
+    "angular-resource": "latest",
+    "bootstrap-sass-official": "latest",
+    "angular-bootstrap": "latest"
+  }
+}

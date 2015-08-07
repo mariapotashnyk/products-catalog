@@ -1,0 +1,6 @@
+div.container
+  div data-ng-include="" src="'elements/header.html'"
+  /div(data-ui-view)
+  div data-ui-view="catalog" data-ng-show="$state.includes('public.catalog')"
+  div data-ui-view="product" data-ng-show="$state.includes('public.product')"
+  div data-ng-include="" src="'elements/footer.html'"
