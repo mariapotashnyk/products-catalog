@@ -8,5 +8,11 @@ To run tests just run (you need installed firefox in your system)
 ```
 rake cucumber
 ```
+
+To generate fixtures run
+```
+rake products:generate_fixtures
+```
+
 All tests are passing
 ![tests](http://cs629304.vk.me/v629304031/d70f/Dh6jKDCskOk.jpg)
