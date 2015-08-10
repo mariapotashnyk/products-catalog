@@ -12,7 +12,6 @@ app.controller 'catalog', [ '$scope', 'Slug', 'Products',  ($scope, Slug, Produc
       $scope.currentPage = response.pagination.currentPage
       $scope.itemsPerPage = response.pagination.perPage
     ,(errorResponse) ->
-      console.log(errorResponse)
       $scope.errorText = "Sorry, but an error occurred: #{errorResponse.statusText}"
 
   $scope.getProducts()

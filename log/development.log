@@ -19008,3 +19008,231 @@ LINE 2: ('Product 0', "Best product 0 for everyone!", 0.99),
 ('Product 97', 'Best product 97 for everyone!', 97.99),
 ('Product 98', 'Best product 98 for everyone!', 98.99),
 ('Product 99', 'Best product 99 for everyone!', 99.99);
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-10 20:40:18 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (46.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Public::IndexController#index as HTML
+  Rendered public/index/index.html.slim (625.4ms)
+Completed 200 OK in 659ms (Views: 658.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/products?page=1&order=price&direction=cheap_first" for 127.0.0.1 at 2015-08-10 20:40:23 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"price", "direction"=>"cheap_first", "product"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError ({"page"=>"1", "order"=>"price", "direction"=>"cheap_first", "format"=>:json, "controller"=>"api/products", "action"=>"index", "product"=>{}}):
+  app/controllers/api/products_controller.rb:7:in `index'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /home/max/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /home/max/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/max/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (193.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-10 20:42:27 +0300
+Processing by Public::IndexController#index as HTML
+  Rendered public/index/index.html.slim (242.5ms)
+Completed 200 OK in 252ms (Views: 251.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/products?page=1&order=price&direction=cheap_first" for 127.0.0.1 at 2015-08-10 20:42:29 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"price", "direction"=>"cheap_first", "product"=>{}}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant Product::PRODUCTS_PER_PAGE):
+  app/models/product.rb:10:in `get_products'
+  app/controllers/api/products_controller.rb:25:in `products'
+  app/controllers/api/products_controller.rb:8:in `index'
+
+
+  Rendered /home/max/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/max/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/max/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/max/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-10 20:43:11 +0300
+Processing by Public::IndexController#index as HTML
+  Rendered public/index/index.html.slim (222.8ms)
+Completed 200 OK in 232ms (Views: 231.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/products?page=1&order=price&direction=cheap_first" for 127.0.0.1 at 2015-08-10 20:43:12 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"price", "direction"=>"cheap_first", "product"=>{}}
+  [1m[35m (100.6ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (1.9ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."price" ASC LIMIT 20 OFFSET 0[0m
+  Rendered api/products/index.json.rabl (8.7ms)
+Completed 200 OK in 142ms (Views: 17.2ms | ActiveRecord: 105.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-10 20:43:16 +0300
+Processing by Public::IndexController#index as HTML
+  Rendered public/index/index.html.slim (239.8ms)
+Completed 200 OK in 249ms (Views: 248.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/products?page=1&order=price&direction=cheap_first" for 127.0.0.1 at 2015-08-10 20:43:17 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"price", "direction"=>"cheap_first", "product"=>{}}
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."price" ASC LIMIT 20 OFFSET 0[0m
+  Rendered api/products/index.json.rabl (6.8ms)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 5.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (72.3ms)[0m  INSERT INTO products (name, description, price) VALUES
+('Product 0', 'Best product 0 for everyone!', 0.99),
+('Product 1', 'Best product 1 for everyone!', 1.99),
+('Product 2', 'Best product 2 for everyone!', 2.99),
+('Product 3', 'Best product 3 for everyone!', 3.99),
+('Product 4', 'Best product 4 for everyone!', 4.99),
+('Product 5', 'Best product 5 for everyone!', 5.99),
+('Product 6', 'Best product 6 for everyone!', 6.99),
+('Product 7', 'Best product 7 for everyone!', 7.99),
+('Product 8', 'Best product 8 for everyone!', 8.99),
+('Product 9', 'Best product 9 for everyone!', 9.99),
+('Product 10', 'Best product 10 for everyone!', 10.99),
+('Product 11', 'Best product 11 for everyone!', 11.99),
+('Product 12', 'Best product 12 for everyone!', 12.99),
+('Product 13', 'Best product 13 for everyone!', 13.99),
+('Product 14', 'Best product 14 for everyone!', 14.99),
+('Product 15', 'Best product 15 for everyone!', 15.99),
+('Product 16', 'Best product 16 for everyone!', 16.99),
+('Product 17', 'Best product 17 for everyone!', 17.99),
+('Product 18', 'Best product 18 for everyone!', 18.99),
+('Product 19', 'Best product 19 for everyone!', 19.99),
+('Product 20', 'Best product 20 for everyone!', 20.99),
+('Product 21', 'Best product 21 for everyone!', 21.99),
+('Product 22', 'Best product 22 for everyone!', 22.99),
+('Product 23', 'Best product 23 for everyone!', 23.99),
+('Product 24', 'Best product 24 for everyone!', 24.99),
+('Product 25', 'Best product 25 for everyone!', 25.99),
+('Product 26', 'Best product 26 for everyone!', 26.99),
+('Product 27', 'Best product 27 for everyone!', 27.99),
+('Product 28', 'Best product 28 for everyone!', 28.99),
+('Product 29', 'Best product 29 for everyone!', 29.99),
+('Product 30', 'Best product 30 for everyone!', 30.99),
+('Product 31', 'Best product 31 for everyone!', 31.99),
+('Product 32', 'Best product 32 for everyone!', 32.99),
+('Product 33', 'Best product 33 for everyone!', 33.99),
+('Product 34', 'Best product 34 for everyone!', 34.99),
+('Product 35', 'Best product 35 for everyone!', 35.99),
+('Product 36', 'Best product 36 for everyone!', 36.99),
+('Product 37', 'Best product 37 for everyone!', 37.99),
+('Product 38', 'Best product 38 for everyone!', 38.99),
+('Product 39', 'Best product 39 for everyone!', 39.99),
+('Product 40', 'Best product 40 for everyone!', 40.99),
+('Product 41', 'Best product 41 for everyone!', 41.99),
+('Product 42', 'Best product 42 for everyone!', 42.99),
+('Product 43', 'Best product 43 for everyone!', 43.99),
+('Product 44', 'Best product 44 for everyone!', 44.99),
+('Product 45', 'Best product 45 for everyone!', 45.99),
+('Product 46', 'Best product 46 for everyone!', 46.99),
+('Product 47', 'Best product 47 for everyone!', 47.99),
+('Product 48', 'Best product 48 for everyone!', 48.99),
+('Product 49', 'Best product 49 for everyone!', 49.99),
+('Product 50', 'Best product 50 for everyone!', 50.99),
+('Product 51', 'Best product 51 for everyone!', 51.99),
+('Product 52', 'Best product 52 for everyone!', 52.99),
+('Product 53', 'Best product 53 for everyone!', 53.99),
+('Product 54', 'Best product 54 for everyone!', 54.99),
+('Product 55', 'Best product 55 for everyone!', 55.99),
+('Product 56', 'Best product 56 for everyone!', 56.99),
+('Product 57', 'Best product 57 for everyone!', 57.99),
+('Product 58', 'Best product 58 for everyone!', 58.99),
+('Product 59', 'Best product 59 for everyone!', 59.99),
+('Product 60', 'Best product 60 for everyone!', 60.99),
+('Product 61', 'Best product 61 for everyone!', 61.99),
+('Product 62', 'Best product 62 for everyone!', 62.99),
+('Product 63', 'Best product 63 for everyone!', 63.99),
+('Product 64', 'Best product 64 for everyone!', 64.99),
+('Product 65', 'Best product 65 for everyone!', 65.99),
+('Product 66', 'Best product 66 for everyone!', 66.99),
+('Product 67', 'Best product 67 for everyone!', 67.99),
+('Product 68', 'Best product 68 for everyone!', 68.99),
+('Product 69', 'Best product 69 for everyone!', 69.99),
+('Product 70', 'Best product 70 for everyone!', 70.99),
+('Product 71', 'Best product 71 for everyone!', 71.99),
+('Product 72', 'Best product 72 for everyone!', 72.99),
+('Product 73', 'Best product 73 for everyone!', 73.99),
+('Product 74', 'Best product 74 for everyone!', 74.99),
+('Product 75', 'Best product 75 for everyone!', 75.99),
+('Product 76', 'Best product 76 for everyone!', 76.99),
+('Product 77', 'Best product 77 for everyone!', 77.99),
+('Product 78', 'Best product 78 for everyone!', 78.99),
+('Product 79', 'Best product 79 for everyone!', 79.99),
+('Product 80', 'Best product 80 for everyone!', 80.99),
+('Product 81', 'Best product 81 for everyone!', 81.99),
+('Product 82', 'Best product 82 for everyone!', 82.99),
+('Product 83', 'Best product 83 for everyone!', 83.99),
+('Product 84', 'Best product 84 for everyone!', 84.99),
+('Product 85', 'Best product 85 for everyone!', 85.99),
+('Product 86', 'Best product 86 for everyone!', 86.99),
+('Product 87', 'Best product 87 for everyone!', 87.99),
+('Product 88', 'Best product 88 for everyone!', 88.99),
+('Product 89', 'Best product 89 for everyone!', 89.99),
+('Product 90', 'Best product 90 for everyone!', 90.99),
+('Product 91', 'Best product 91 for everyone!', 91.99),
+('Product 92', 'Best product 92 for everyone!', 92.99),
+('Product 93', 'Best product 93 for everyone!', 93.99),
+('Product 94', 'Best product 94 for everyone!', 94.99),
+('Product 95', 'Best product 95 for everyone!', 95.99),
+('Product 96', 'Best product 96 for everyone!', 96.99),
+('Product 97', 'Best product 97 for everyone!', 97.99),
+('Product 98', 'Best product 98 for everyone!', 98.99),
+('Product 99', 'Best product 99 for everyone!', 99.99);
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-10 20:43:41 +0300
+Processing by Public::IndexController#index as HTML
+  Rendered public/index/index.html.slim (262.3ms)
+Completed 200 OK in 272ms (Views: 271.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/products?page=1&order=price&direction=cheap_first" for 127.0.0.1 at 2015-08-10 20:43:43 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"price", "direction"=>"cheap_first", "product"=>{}}
+  [1m[35m (3.9ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."price" ASC LIMIT 20 OFFSET 0[0m
+  Rendered api/products/index.json.rabl (79.2ms)
+Completed 200 OK in 97ms (Views: 22.4ms | ActiveRecord: 77.2ms)
+
+
+Started GET "/api/products?page=1&order=price&direction=expensive_first" for 127.0.0.1 at 2015-08-10 20:43:46 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"price", "direction"=>"expensive_first", "product"=>{}}
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (2.4ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."price" DESC LIMIT 20 OFFSET 0[0m
+  Rendered api/products/index.json.rabl (15.2ms)
+Completed 200 OK in 30ms (Views: 20.3ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/api/products?page=1&order=price&direction=cheap_first" for 127.0.0.1 at 2015-08-10 20:43:46 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"price", "direction"=>"cheap_first", "product"=>{}}
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."price" ASC LIMIT 20 OFFSET 0[0m
+  Rendered api/products/index.json.rabl (14.3ms)
+Completed 200 OK in 27ms (Views: 21.7ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/api/products?page=1&order=name&direction=expensive_first" for 127.0.0.1 at 2015-08-10 20:43:48 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"name", "direction"=>"expensive_first", "product"=>{}}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (4.0ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."name" DESC LIMIT 20 OFFSET 0[0m
+  Rendered api/products/index.json.rabl (18.7ms)
+Completed 200 OK in 31ms (Views: 21.7ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/api/products?page=1&order=name&direction=cheap_first" for 127.0.0.1 at 2015-08-10 20:43:49 +0300
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"name", "direction"=>"cheap_first", "product"=>{}}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (1.9ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."name" ASC LIMIT 20 OFFSET 0[0m
+  Rendered api/products/index.json.rabl (13.9ms)
+Completed 200 OK in 26ms (Views: 18.7ms | ActiveRecord: 7.4ms)

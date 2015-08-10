@@ -7,6 +7,7 @@
     "ui-router-extras": "latest",
     "angular-resource": "latest",
     "bootstrap-sass-official": "latest",
-    "angular-bootstrap": "latest"
+    "angular-bootstrap": "latest",
+    "angular-slugify": "git://github.com/paulsmith/angular-slugify.git"
   }
 }
