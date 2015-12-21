@@ -24948,3 +24948,153 @@ Processing by Api::ProductsController#index as JSON
   [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products"  ORDER BY "products"."price" ASC LIMIT 20 OFFSET 0
   Rendered api/products/index.json.rabl (5.5ms)
 Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-22 01:39:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Public::IndexController#index as HTML
+  Rendered public/index/index.html.slim (8051.8ms)
+Completed 200 OK in 8066ms (Views: 8065.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/manifest.css?body=1" for 127.0.0.1 at 2015-12-22 01:39:43 +0200
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angularjs/rails/resource/utils/injector.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angularjs/rails/resource/serialization.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angularjs/rails/resource/utils/url_builder.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angularjs/rails/resource/index.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angularjs/rails/resource/resource.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/ui-router-extras/release/ct-ui-router-extras.min.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angularjs/rails/resource/utils/inflector.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angular-slugify/angular-slugify.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/angular-bootstrap/ui-bootstrap-tpls.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/modules/resource.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/router.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/models/product.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/models/products.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/controllers/catalog.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/controllers/layout.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/elements/header.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/controllers/product.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/layouts/index.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/views/catalog.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/views/product.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/manifest.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/assets/elements/footer.js?body=1" for 127.0.0.1 at 2015-12-22 01:39:44 +0200
+
+
+Started GET "/api/products?page=1&order=price&direction=cheap_first" for 127.0.0.1 at 2015-12-22 01:39:45 +0200
+Processing by Api::ProductsController#index as JSON
+  Parameters: {"page"=>"1", "order"=>"price", "direction"=>"cheap_first", "product"=>{}}
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "products"
+  [1m[36mProduct Load (1.2ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."price" ASC LIMIT 20 OFFSET 0[0m
+  Rendered api/products/index.json.rabl (26.3ms)
+Completed 200 OK in 50ms (Views: 34.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/api/products/1-product-0" for 127.0.0.1 at 2015-12-22 01:39:47 +0200
+Processing by Api::ProductsController#show as JSON
+  Parameters: {"id"=>"1-product-0", "product"=>{}}
+  [1m[35mProduct Load (0.9ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered api/products/show.json.rabl (1.9ms)
+Completed 200 OK in 73ms (Views: 12.0ms | ActiveRecord: 38.4ms)
