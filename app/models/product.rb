@@ -8,4 +8,8 @@ class Product < ActiveRecord::Base
     order(sort_params(order, direction)).page(page).per(PRODUCTS_PER_PAGE)
   end
 
+  def self.search(name = '')
+    where('name iLIKE ?', "%#{name}%").limit(5)
+  end
+
 end

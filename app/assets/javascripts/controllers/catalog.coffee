@@ -1,4 +1,4 @@
-app.controller 'catalog', [ '$scope', 'Slug', 'Products',  ($scope, Slug, Products) ->
+app.controller 'catalog', [ '$scope', 'Products',  ($scope, Products) ->
 
 # query params default values
   $scope.direction = 'cheap_first'
@@ -27,5 +27,4 @@ app.controller 'catalog', [ '$scope', 'Slug', 'Products',  ($scope, Slug, Produc
     $scope.currentPage = 1
     $scope.getProducts()
 
-  $scope.slugify = (id, name) -> Slug.slugify("#{id}-#{name}")
 ]

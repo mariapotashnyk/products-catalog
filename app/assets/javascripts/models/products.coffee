@@ -1,5 +1,9 @@
 app.factory 'Products', ['AppModel', (AppModel) ->
 
   class Products extends AppModel
-    @configure url: '/products?page={{page}}&order={{order}}&direction={{direction}}'
+    @configure url: (context) ->
+      unless context.name?
+        return "/products?page=#{context.page}&order=#{context.order}&direction=#{context.direction}"
+      else
+        return "/products/search/#{context.name}"
 ]

@@ -2,3 +2,11 @@ nav.navbar.navbar-default
   div.container-fluid
     div.navbar-header
       a.navbar-brand data-ui-sref="public.catalog" Products catalog
+    form.form-inline.pull-right
+      input.search-input.form-control.input-lg [id="search_input" type="text" placeholder="start typing to search products" value=""
+      data-ng-model="searchQuery" data-ng-model-options="{debounce: 700}"
+      data-ng-change="search(searchQuery)" data-ng-focus="showSearchResults = true" data-ng-blur="showSearchResults = false"]
+      ul.col-md-12.search-results-field [data-ng-show="showSearchResults || mouseover"
+        data-ng-mouseover="mouseover = true" data-ng-mouseleave="mouseover = false"]
+        li.search-results-item data-ng-repeat="searchResult in searchResults"
+          a [data-ui-sref="public.product({ productId: slugify(searchResult.id, searchResult.name) })"] {{::searchResult.name}}

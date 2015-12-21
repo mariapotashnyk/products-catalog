@@ -19,12 +19,10 @@ module App
     # config.middleware.insert_before(Rack::Sendfile, LightResizer::Middleware, Rails.root)
     # config.autoload_paths << "#{Rails.root}/lib/**/*"
 
-    config.assets.paths << "#{config.root}/vendor/assets/bower_components"
-
     # AngularJS slim templates
     config.angular_templates.module_name    = 'templates'
     config.angular_templates.ignore_prefix  = %w(templates/)
-    config.angular_templates.markups        = %w(erb slim)
+    config.angular_templates.markups        = %w(erb slim html)
     config.angular_templates.htmlcompressor = false
 
     # Bower asset paths

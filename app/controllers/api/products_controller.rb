@@ -1,10 +1,13 @@
 class Api::ProductsController < ApplicationController
 
-  respond_to :json
-
   def index
     @products = Product.get(params[:page], params[:order], params[:direction])
     @pagination = { total_count: @products.total_count,current_page: @products.current_page, per_page: Product::PRODUCTS_PER_PAGE }
+    render 'api/products/index'
+  end
+
+  def search
+    @products = Product.search(params[:name])
     render 'api/products/index'
   end
 

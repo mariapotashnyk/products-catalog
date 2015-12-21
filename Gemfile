@@ -1,19 +1,15 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.2.1'
 
 gem 'rails', '4.2.0'
-
-gem 'json'
-gem 'rabl'
-gem 'bower-rails'
 
 # Database
 gem 'pg'
 
 # Assets
+gem 'bower-rails'
 gem 'sass-rails', '~> 5.0'
-gem 'compass-rails', '2.0.2'
 gem 'slim'
 gem 'sprockets-rails'
 
@@ -26,17 +22,9 @@ gem 'jquery-rails'
 
 # Controllers
 gem 'kaminari'
-gem 'responders', '~> 2.0'
+gem 'rabl'
 
 group :development, :test do
-  gem 'byebug'
-  gem 'capistrano', '3.2.1'
-  gem 'capistrano-rails', '~> 1.1'
-  gem 'capistrano-bundler'
-  gem 'capistrano-rvm', '0.1.2'
-  gem 'rails-dev-tweaks'
-  gem 'quiet_assets'
-  gem 'pry'
   gem 'spring'
   gem 'cucumber-rails', require: false
   gem 'capybara'

@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 20150805130015) do
   enable_extension "plpgsql"
 
   create_table "products", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name",                                               null: false
     t.text     "description"
-    t.decimal  "price",       precision: 10, scale: 2
+    t.decimal  "price",       precision: 10, scale: 2, default: 0.0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

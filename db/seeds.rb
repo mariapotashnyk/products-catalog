@@ -22,6 +22,6 @@ query << ';'
 
 ActiveRecord::Base.connection.execute(query)
 
-#
+# Example
 # Product.create([{name: 'product 1', description: 'Best product for everyone!', price: '9.99'},
 #                 {name: 'product 2', description: 'Best product for everyone!', price: '99.9'}])

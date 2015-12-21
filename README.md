@@ -1,6 +1,6 @@
 ## products catalog
 
-Used Ruby 2.2.0, Rails 4.2.0, AngularJS 1.4.3, Coffeescript, Slim
+Used Ruby 2.2.1, Rails 4.2.0, AngularJS 1.4.8, Coffeescript, Slim
 
 [Try out demo on Heroku](http://calm-depths-3317.herokuapp.com/).
 
@@ -15,4 +15,4 @@ rake products:generate_fixtures
 ```
 
 All tests are passing
-![tests](http://cs629304.vk.me/v629304031/d70f/Dh6jKDCskOk.jpg)
+![tests](https://pp.vk.me/c631218/v631218426/6c08/zmhsef11t_0.jpg)
