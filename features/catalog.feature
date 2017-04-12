@@ -15,3 +15,4 @@ Feature: Catalog
     Then I should see link "Product 10"
     Then I should see "Best product 10 for everyone!"
     And I should see "10.99 USD"
+    And I should see "Fake expectation"
