@@ -5,7 +5,7 @@ postgresql:
 firefox:
   version: '31.0esr'
 plan:
-  - defult
+  - default
   - First
 profiles:
   defaut:
