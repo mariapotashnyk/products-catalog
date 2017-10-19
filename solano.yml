@@ -8,7 +8,7 @@ plan:
   - first
   - second
 profiles:
-  first:
+  default:
     test_pattern:
       - features/product.feature
   second:
