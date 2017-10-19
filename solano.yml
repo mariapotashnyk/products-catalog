@@ -5,10 +5,10 @@ postgresql:
 firefox:
   version: '31.0esr'
 plan:
-  - first
+  - defult
   - First
 profiles:
-  first:
+  defaut:
     test_pattern:
       - features/product.feature
   First:
