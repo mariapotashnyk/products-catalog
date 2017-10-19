@@ -6,12 +6,12 @@ firefox:
   version: '31.0esr'
 plan:
   - first
-  - second
+  - First
 profiles:
   first:
     test_pattern:
       - features/product.feature
-  second:
+  First:
     test_pattern:
       - features/catalog.feature
 
