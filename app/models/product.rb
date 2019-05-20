@@ -1,6 +1,5 @@
 # copyright
 class Product < ActiveRecord::Base
-
   extend SortParamsConcern
 
   PRODUCTS_PER_PAGE = 20
