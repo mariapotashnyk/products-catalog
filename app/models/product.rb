@@ -1,4 +1,5 @@
 # copyright
+
 class Product < ActiveRecord::Base
   extend SortParamsConcern
 
